@@ -5,8 +5,8 @@ const palette = require('../palette.js');
 
 describe('#palette', function() {
     it('should not equal "string"', function() {
-        var result = palette('red', 'message');
+        var result = palette('green', 'message');
 
-        expect(result).to.not.equal('string');
+        expect(result).to.be.an('undefined');
       });
 });
