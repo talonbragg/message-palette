@@ -1,6 +1,6 @@
 {
   "name": "messagepalette",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A module that allows you to color your console messages",
   "main": "palette.js",
   "scripts": {
