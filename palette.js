@@ -8,9 +8,10 @@ const colors = {
   white: 37
 };
 
-module.exports = function palette(color, message) {
-  if (colors[color]) {
-    return console.log(`\x1b[${colors[color]}m%s\x1b[0m`, message);
-  }
-  return console.log(message);
-};
+const palette = (color, message) =>
+  console.log(colors[color]
+              ? `\x1b[${colors[color]}m${message}\x1b[0m`
+              : message
+             );
+
+module.exports = palette;
