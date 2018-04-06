@@ -7,7 +7,7 @@ install:
   - npm install -g codecov
   - npm install -g istanbul
 script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov --exit
+  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov
   - codecov
 
 after_success:
