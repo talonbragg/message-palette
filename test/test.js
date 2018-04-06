@@ -29,4 +29,9 @@ describe('#palette', function() {
 
         expect(result).to.be.an('undefined');
       });
+      it('should be typed as undefined"', function() {
+        var result = palette('white', 'message');
+
+        expect(result).to.be.an('undefined');
+      });
 });
