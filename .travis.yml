@@ -4,8 +4,7 @@ node_js:
   - stable
 
 install:
-  - npm install -g codecov
-  - npm install -g istanbul
+  - npm install
 script:
   - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && codecov
   - codecov
